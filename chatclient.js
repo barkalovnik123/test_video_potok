@@ -108,7 +108,7 @@ function connect() {
   // Разкоментить для всех остальных кейсов.
   // serverUrl = scheme + "://" + myHostname + ":6503";
   // Пока поживём на нгроке) mew mew
-  serverUrl = "ws://settle-crawling-pastel.ngrok-free.dev"
+  serverUrl = "wss://settle-crawling-pastel.ngrok-free.dev"
 
   log(`Connecting to server: ${serverUrl}`);
   connection = new WebSocket(serverUrl, "json");
