@@ -105,7 +105,10 @@ function connect() {
   if (document.location.protocol === "https:") {
     scheme += "s";
   }
-  serverUrl = scheme + "://" + myHostname + ":6503";
+  // Разкоментить для всех остальных кейсов.
+  // serverUrl = scheme + "://" + myHostname + ":6503";
+  // Пока поживём на нгроке)
+  serverUrl = "ws://settle-crawling-pastel.ngrok-free.dev"
 
   log(`Connecting to server: ${serverUrl}`);
   connection = new WebSocket(serverUrl, "json");
